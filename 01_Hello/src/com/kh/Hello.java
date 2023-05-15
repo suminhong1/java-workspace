@@ -50,7 +50,7 @@ public class Hello { // 클래스 명은 클래스 파일명과 동일해야 한
  *  - JDK(Java Development kit) : 자바 개발 도구
  * 	  = JRE + 실행파일(bin / javac.exe, java.exe 등)
  * 
- *  - JRE(Java Runtime ENvironment) : 자바 실행 환경
+ *  - JRE(Java Runtime Environment) : 자바 실행 환경
  *    = JVM + Java API(lib/src.zip)
  *    
  *    - JVM(Java Virtual Machine) : 자바 가상 머신
