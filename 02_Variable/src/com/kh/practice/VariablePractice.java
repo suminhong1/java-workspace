@@ -14,7 +14,7 @@ public class VariablePractice {
 //		vp.method1();
 //		vp.method2();
 //		vp.method3();
-		vp.method4();
+//		vp.method4();
 	}	
 		
 	
@@ -58,6 +58,9 @@ public class VariablePractice {
 		int y = 7;
 		int z = 9;
 		
+		x = 7;
+		y = 9;
+		z = 5;
 		
 		
 		System.out.println("x=" + x);
