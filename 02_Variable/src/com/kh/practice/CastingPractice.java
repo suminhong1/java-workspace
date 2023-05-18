@@ -1,13 +1,13 @@
 package com.kh.practice;
 
-import java.awt.SystemTray;
 import java.util.Scanner;
 
 public class CastingPractice {
 	
 	public static void main(String[] args) {
 		CastingPractice cp = new CastingPractice();
-		cp.method1();
+//		cp.method1();
+		cp.method2();
 	}
 	
 	public void method1() {
@@ -15,14 +15,16 @@ public class CastingPractice {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("문자 : ");
-		char a = sc.next();
 		
-		System.out.println( + " unicode :");
-		System.out.println( + " unicode :");
+		 char c = sc.next().charAt(0);
+		
+
+		System.out.println( c + " unicode : " + (int)c );
+		System.out.println(((int)c+1) + " unicode : " + ((int)c+1)); // 
 	}
-	
+
 	public void method2() {
-		
+	
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("국어 : ");
@@ -32,7 +34,9 @@ public class CastingPractice {
 		System.out.print("수학 : ");
 		int m = sc.nextInt();
 		
-		System.out.println("총점 : " + (k+e+m));
-		System.out.println("평균 : " + (k+e+m)/3);
+		
+		System.out.println("총점 : " + );
+		System.out.printf("%.3f\t" , );
+
 	}
 }
