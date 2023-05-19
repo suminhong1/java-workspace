@@ -73,8 +73,8 @@ public class ConditionPractice {
     	System.out.println("피자 먹는 사람 수 : ");
     	int P = sc.nextInt();
     	
-    	if (p<P) {
-    		System.out.println()
+    	if () {
+    		System.out.println();
     	}
         
     }
@@ -174,13 +174,24 @@ public class ConditionPractice {
       아이디가 틀렸습니다.
     */
     public void practice7() {
-    	String i = "";
-    	int p = 0;
     	
     	System.out.print("아이디 : ");
+    	String i = sc.nextLine();
+    	System.out.print("비밀번호 : ");
+    	int p = sc.nextInt();
     	
- 
-    }
+    	String h = "happy";
+    	int o = 1234;
+    	
+    	
+    	if ((i == h)&&(p == o))System.out.println("로그인 성공!");
+    	if (i!=h) {
+    		System.out.println("아이디가 틀렸습니다.");
+    	}else if(p!=o){
+    		System.out.println("비밀번호가 틀렸습니다.");
+    	}
+    	
+    	}
 
     /*
         키, 몸무게를 double로 입력 받고 BMI지수를 계산하여 계산 결과에 따라
@@ -197,6 +208,29 @@ public class ConditionPractice {
 
      */
     public void practice8() {
+    	
+    	System.out.print("키(m)를 입력해주세요. : ");
+    	double h = sc.nextDouble();
+    
+    	System.out.print("몸무게(kg)을 입력해주세요. : ");
+    	double w = sc.nextDouble();
+    	
+    	double b = w/(h*h);
+    	
+    	System.out.println(b);
+    	
+    	if(b<18.5) {
+    		System.out.println("저체중");
+    	}else if(b>=18.5) {
+    		System.out.println("정상체중");
+    	}else if(b>=23) {
+    		System.out.println("과체중");
+    	}else if(b>=25) {
+    		System.out.println("비만");
+    	}else if(b>=30) {
+    		System.out.println("고도비만");
+    	}
+    	
        
     }
 
@@ -212,6 +246,24 @@ public class ConditionPractice {
 
      */
     public void practice9() {
+    	System.out.print("피연산자1 입력 : ");
+    	int num1 = sc.nextInt();
+    	System.out.print("피연산자2 입력 : ");
+    	int num2 = sc.nextInt();
+    	System.out.print("연산자를 입력(+,-,*,/,%) : ");
+    	String a = sc.next();
+    	
+    	System.out.println(num1 + a + num2 + " = " + b);
+    	 
+    	
+//    	if(num1 < 0) {
+//    		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+//    	}else if(num2 < 0) {
+//    		System.out.println("잘못 입력하셨습니다. 프로그램을 종료합니다.");
+//    	}
+    	
+    	
+    	
 
     }
 
@@ -228,6 +280,37 @@ public class ConditionPractice {
         조회 메뉴입니다.
      */
     public void practice10() {
+    	System.out.println("1 . 입력");
+    	System.out.println("2 . 수정");
+    	System.out.println("3 . 조회");
+    	System.out.println("4 . 삭제");
+    	System.out.println("9 . 종료");
+    	
+    	System.out.print("메뉴 번호를 입력하세요 : ");
+    	int m = sc.nextInt();
+    	
+    	switch(m) {
+    	case 1:
+    		System.out.println("입력 메뉴입니다.");
+    		break;
+    	case 2:
+    		System.out.println("수정 메뉴 입니다.");
+    		break;
+    	case 3:
+    		System.out.println("조회 메뉴 입니다.");
+    		break;
+    	case 4: 
+    		System.out.println("삭제 메뉴 입니다.");
+    		break;
+    	case 9:
+    		System.out.println("프로그램이 종료됩니다.");
+    	default:
+    		System.out.println(" ");
+    		
+    	}
+    	
+    	
+    	
 
     }
 
@@ -279,20 +362,30 @@ public class ConditionPractice {
      */
     public void practice11() {
         
+    	System.out.print("중간고사 점수 : " );
+    	int a = sc.nextInt();
+    	System.out.print("기말고사 점수 : " );
+    	int b = sc.nextInt();
+    	System.out.print("과제 점수 : " );
+    	int c = sc.nextInt();
+    	System.out.print("출석 회수 : " );
+    	int d = sc.nextInt();
+    	
+    	System.out.println("===========결과==========");
     }
     public static void main(String[] args) {
     	ConditionPractice c = new ConditionPractice();
 //    	c.practice1();
 //    	c.practice2();
-//    	c.practice3(); 안했음
-//    	c.practice4(); ㅁ
+    	c.practice3(); 
+//    	c.practice4(); a
 //    	c.practice5(); a
 //    	c.practice6();
-    	c.practice7();
+//    	c.practice7(); a
 //    	c.practice8();
-//    	c.practice9();
+//    	c.practice9(); a
 //    	c.practice10();
-//    	c.practice11();
+//    	c.practice11(); a
     }
     
 }

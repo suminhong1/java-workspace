@@ -1,14 +1,10 @@
 package com.kh.practice;
-
 import java.util.Scanner;
-
 public class VariablePractice {
 	
 	// FQCN(Fully Qualified Class Name)
 	// 클래스가 속한 패키지명을 모두 포함한 이름
-
 	public static void main(String[] args) {
-
 		VariablePractice vp = new VariablePractice();
 		
 //		vp.method1();
@@ -32,24 +28,23 @@ public class VariablePractice {
 		System.out.println("빼기 결과  : " + (num1 - num2));
 		System.out.println("곱하기 결과  : " + (num1 * num2));
 		System.out.println("나누기 몫 결과  : " + (num1 / num2));
-	 
-
+	
 	}
 	
 	public void method2() {
 		 Scanner sc = new Scanner(System.in);
-		 
+		
 		 int adult = 10000;
 		 int student = 7000;
-		 
+		
 		 System.out.print("성인은 몇명입니까? > ");
 		 int num1 =sc.nextInt();
-		 
+		
 		 System.out.print("청소년은 몇명입니까? > ");
 		 int num2 =sc.nextInt();
-		 
+		
 		 System.out.println("지불해야 하는 금액은 " + ((num1*adult) + (num2*student)) + "입니다.");
-		 
+		
 	}
 	
 	public void method3() {
@@ -75,7 +70,7 @@ public class VariablePractice {
 		String name = sc.nextLine();
 		
 		System.out.println("첫번째 문자 : " + (name.charAt(0)));
-		System.out.println("두번째 문자 : " + (name.charAt(7)));
+		System.out.println("두번째 문자 : " + (name.charAt(7))); //여기가 좀 아쉬워서 피드백 부탁드립니다.
 		
 	}
 }
