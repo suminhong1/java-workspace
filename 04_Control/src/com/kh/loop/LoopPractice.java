@@ -31,7 +31,7 @@ class LoopPractice {
 
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
-    	int sum = 100;
+    	int sum = 0;
     	
     	for (int i=1 )
     }
