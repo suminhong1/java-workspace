@@ -9,19 +9,23 @@ public class User {
 	public String nickName;
 	public char gender;
 	
-	public void login() {// 로그인
+	public boolean login() { // 로그인
+		return false;
+	}
+	
+	public boolean signUp() { // 회원가입
+		return false;
+	}
+	
+	public User viewProfile() { // 프로필 보기
+		return null;
+	}
+	
+	public void updateProfile() { // 프로필 수정
 		
 	}
-	public void signUp() {//회원가입
-		
-	}
-	public void viewProfile() {// 프로필 보기
-		
-	}
-	public void updateProfile() {//프로필 수정
-		
-	}
-	public void  delelteProfile() {// 계정 삭제
+	
+	public void  delelteProfile() { // 계정 삭제
 		
 	}
 }

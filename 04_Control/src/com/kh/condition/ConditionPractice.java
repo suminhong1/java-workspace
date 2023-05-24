@@ -64,7 +64,7 @@ public class ConditionPractice {
     	
         if(a<b) {
         	System.out.println(b/a+1);
-        }else if(a>b) {
+        }else if(a>=b) {
         	System.out.println(1);
         }
     }
@@ -100,10 +100,7 @@ public class ConditionPractice {
     	int a = k+e+m;
     	int b = a/3;
     	
-    	if(k<40) {System.out.println("불합격입니다.");}
-    	else if(m<40) {System.out.println("불합격입니다.");}
-    	else if(e<40) {System.out.println("불합격입니다.");}
-    	else if(b<60) {System.out.println("불합격입니다.");}
+    	if((k<40)||(m<40)||(e<40)||(b<60)) {System.out.println("불합격입니다.");}
     	else {
     		System.out.println("합계 : " + a);
     		System.out.println("평균 : " + (double)b);
@@ -180,15 +177,13 @@ public class ConditionPractice {
     	if("happy".equals(i)) {
     	if(p==o){
     		System.out.println("로그인 성공!");
-    	}
-    	else if (p!=o){
+    	}else if (p!=o){
     		System.out.println("비밀번호가 틀렸습니다.");
-    	}else{
-    		System.out.println("아이디가 틀렸습니다."); //"아이디가 틀렸습니다"부분이 나오지 않습니다. 피드백 부탁드립니다.
     	}
-    	
     	}
-    	
+    	else{
+    		System.out.println("아이디가 틀렸습니다.");
+    	}
     	}
     /*
         키, 몸무게를 double로 입력 받고 BMI지수를 계산하여 계산 결과에 따라
@@ -213,7 +208,7 @@ public class ConditionPractice {
     	
     	System.out.println("BMI 지수 : " + b);
     	
-    	if(b<18.5) {
+    	if(18.5>b) {
     		System.out.println("저체중");
     	}else if(b>=18.5) {
     		System.out.println("정상체중");
@@ -338,7 +333,6 @@ public class ConditionPractice {
         기말 고사 점수 : 100
         과제 점수 : 80
         출석 회수 : 13
-        
         ===========결과==========
         FAIL [출석 횟수 부족] (13/20)
         중간 고사 점수 : 100
@@ -390,13 +384,13 @@ public class ConditionPractice {
 //    	c.practice1();
 //    	c.practice2();
 //    	c.practice3();
-//    	c.practice4();
+    	c.practice4();
 //    	c.practice5();
 //    	c.practice6();
 //    	c.practice7();
 //    	c.practice8();
 //    	c.practice9();
 //    	c.practice10();
-//    	c.practice11(); 
+//    	c.practice11();
     }
 }

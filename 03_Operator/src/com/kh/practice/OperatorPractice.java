@@ -93,6 +93,7 @@ public class OperatorPractice {
 	}
 	
 	public void method6() {
+		int c = 0;
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("사과의 개수 : ");
@@ -102,7 +103,7 @@ public class OperatorPractice {
 		int b = sc.nextInt();
 				
 		System.out.println("필요한 바구니의 수 : " + (a/b+((a%b+9)/10)));
-	
+		c = (a>b) ? a/b+((a%b+9)/10):1;
 	}
 }
 

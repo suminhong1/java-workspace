@@ -32,8 +32,16 @@ class LoopPractice {
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
     	int sum = 0;
+    	int sum1 = 0;
     	
-    	for (int i=1 )
+    	for (int i=1; i<=1001; i+=2) {
+    		sum += i;
+    		
+    	}
+    	for (int j=0; j>=-1000; j+=-2) {
+    		sum1 += j;
+    	}
+    	System.out.println(sum+sum1);
     }
 
     /*
@@ -46,10 +54,27 @@ class LoopPractice {
     */
     public void method3() {
 
-    }
+    	char b = '\u0000';
+    	int count = 0;
+    	
+    	System.out.print("문자열 : ");
+    	String a = sc.nextLine();
+    	
+    	System.out.print("문자 : ");
+    	 b = sc.nextLine().charAt(0);
+    	
+    	 for (int i=0; i<a.length(); i++) {
+             if (a.charAt(i) == b) {
+                 count++;
+             }
+    	
+    	 }
+    	 
+    	 System.out.println(count);
+    	 }
 
     /*
-        0이 나올 때까지 숫자를 출력하시오. (random 사용!)
+        0이 나올 때까지 숫자를 출력하시오. (random 사용! 0~10)
         7
         3
         4
@@ -59,7 +84,14 @@ class LoopPractice {
         0
      */
     public void method4() {
-
+    	
+    	for(int i=10;i>=0;i--) {
+    		int random = (int)Math.random()*11;
+    		if (random==i);{
+    			System.out.println(random);
+    		}
+    	}
+    	System.out.println();
     }
 
     /*
@@ -104,10 +136,10 @@ class LoopPractice {
     }
     public static void main(String[] args) {
     	LoopPractice l = new LoopPractice();
-    	l.method1();
+//    	l.method1();
 //    	l.method2();
 //    	l.method3();
-//    	l.method4();
+    	l.method4();
 //    	l.method5();
 //    	l.method6();
     }
