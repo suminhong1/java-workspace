@@ -1,5 +1,7 @@
 package com.kh.loop;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 class LoopPractice {
@@ -31,17 +33,8 @@ class LoopPractice {
 
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
-    	int sum = 0;
-    	int sum1 = 0;
-    	
-    	for (int i=1; i<=1001; i+=2) {
-    		sum += i;
-    		
-    	}
-    	for (int j=0; j>=-1000; j+=-2) {
-    		sum1 += j;
-    	}
-    	System.out.println(sum+sum1);
+
+
     }
 
     /*
@@ -83,20 +76,20 @@ class LoopPractice {
         4
         0
      */
-    public void method4() {
+    public void method4() { 
     	
-    	for(int i=10;i>=0;i--) {
-    		int random = (int)Math.random()*11;
-    		if (random==i);{
-    			System.out.println(random);
+    	for( ; ;) {
+    		int random = (int)(Math.random()*11);
+    		System.out.println(random);
+    		if (random == 0 );{ // 피드백 부탁드립니다.
+    			break;
     		}
-    	}
-    	System.out.println();
     }
-
+    	
+    	
+    }
     /*
-        주사위를 10번 굴렸을 때 각 눈의 수가 몇 번 나왔는지 출력하세요. (random 사용! 1~10)
-
+        주사위를 10번 굴렸을 때 각 눈의 수가 몇 번 나왔는지 출력하세요. 
         1 : 3
         2 : 2
         3 : 1
@@ -106,8 +99,31 @@ class LoopPractice {
 
      */
     public void method5() {
-
-    }
+    	int a = 0;
+    	int b = 0;
+    	int c = 0;
+    	int d = 0;
+    	int e = 0;
+    	int f = 0;
+    	for(int i=1; i<=10; i++) {
+    	int random = (int)(Math.random()*6+1);
+    	
+    	switch(random) {
+    	case 1 : a++; break;
+    	case 2 : b++; break;
+    	case 3 : c++; break;
+    	case 4 : d++; break;
+    	case 5 : e++; break;
+    	case 6 : f++; break;
+    	}
+    	}
+    	System.out.println("1 : "+a);
+    	System.out.println("2 : "+b);
+    	System.out.println("3 : "+c);
+    	System.out.println("4 : "+d);
+    	System.out.println("5 : "+e);
+    	System.out.println("6 : "+f);
+    }    	
 
     /*
         사용자의 이름을 입력하고 컴퓨터와 가위바위보를 하세요. 
@@ -132,16 +148,31 @@ class LoopPractice {
         이겼습니다 !
     */
     public void method6() {
-
+    	//가위1,바위2,보3
+    	for(;;) {
+    		
+    
+    	int count = 0;
+    	System.out.print("당신의 이름을 입력해주세요 :  ");
+    	String name = sc.nextLine();
+    	System.out.print("가위바위보 : " );
+    	String a = sc.nextLine();
+    	System.out.println("컴퓨터 : " );
+    	System.out.println(name + " : " + a);
+    	
+ 
+    
+    	}
+    	
     }
     public static void main(String[] args) {
     	LoopPractice l = new LoopPractice();
 //    	l.method1();
 //    	l.method2();
 //    	l.method3();
-    	l.method4();
+//    	l.method4();
 //    	l.method5();
-//    	l.method6();
+    	l.method6();
     }
 
 }

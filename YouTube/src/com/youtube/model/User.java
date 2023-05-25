@@ -21,11 +21,11 @@ public class User {
 		return null;
 	}
 	
-	public void updateProfile() { // 프로필 수정
-		
+	public User updateProfile() { // 프로필 수정
+		return null;
 	}
 	
-	public void  delelteProfile() { // 계정 삭제
-		
+	public boolean  delelteProfile() { // 계정 삭제
+		return false;
 	}
 }

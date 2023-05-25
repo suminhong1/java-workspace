@@ -4,40 +4,67 @@ import java.util.Date;
 
 public class Video {
 
-	public String title;
-	public String commnet;
-	public Date uploadAt;
-	public int count; // views
-	public String imgUrl;
-	public String fileUrl;
+	private String title;
+	private String commnet;
+	private Date uploadAt;
+	private int count; // views
+	private String imgUrl;
+	private String fileUrl;
 	
-	/*
-	 * Create : 추가
-	 * Read : 읽기(1개, 목록)
-	 * Update : 수정
-	 * Delete: 삭제
-	 */
+	public Video() {
+	}
+	public Video(String title, String commnet, Date uploadAt, int count, String imgUrl, String fileUrl) {
+		this.title = title;
+		this.commnet = commnet;
+		this.uploadAt = uploadAt;
+		this.count = count;
+		this.imgUrl = imgUrl;
+		this.fileUrl = fileUrl;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getCommnet() {
+		return commnet;
+	}
+	public void setCommnet(String commnet) {
+		this.commnet = commnet;
+	}
+	public Date getUploadAt() {
+		return uploadAt;
+	}
+	public void setUploadAt(Date uploadAt) {
+		this.uploadAt = uploadAt;
+	}
+	public int getCount() {
+		return count;
+	}
+	public void setCount(int count) {
+		this.count = count;
+	}
+	public String getImgUrl() {
+		return imgUrl;
+	}
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+	public String getFileUrl() {
+		return fileUrl;
+	}
+	public void setFileUrl(String fileUrl) {
+		this.fileUrl = fileUrl;
+	}
+	@Override
+	public String toString() {
+		return "Video [title=" + title + ", commnet=" + commnet + ", uploadAt=" + uploadAt + ", count=" + count
+				+ ", imgUrl=" + imgUrl + ", fileUrl=" + fileUrl + "]";
+	}
 	
-	public Video upload() { // 영상 업로드
-		return null;
-	}
-	public Video[] videoList() { // 동영상 목록
-		return null;
-	}
-	public Video viewVideo() { // 영상 1개보기
-		return null;
-	}
-	public Video updateVideo() {//동영상 수정
-		return null;
-	}
-	public boolean deleteVideo() { //동영상 삭제
-		return false;
-	}
 	
 	
-	// 영상 업로드
-	// 영상 목록
-	// 영상 1개 보기
-	// 동영상 수정
-	// 동영상 삭제
+	
+	
 }
