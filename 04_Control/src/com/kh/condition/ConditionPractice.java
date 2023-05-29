@@ -383,8 +383,8 @@ public class ConditionPractice {
     	ConditionPractice c = new ConditionPractice();
 //    	c.practice1();
 //    	c.practice2();
-//    	c.practice3();
-    	c.practice4();
+    	c.practice3();
+//    	c.practice4();
 //    	c.practice5();
 //    	c.practice6();
 //    	c.practice7();

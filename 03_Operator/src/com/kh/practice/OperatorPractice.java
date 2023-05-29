@@ -12,7 +12,7 @@ public class OperatorPractice {
 //		o.method3();
 //		o.method4();
 //		o.method5();
-//		o.method6();
+		o.method6();
 		
 	}
 	
@@ -101,8 +101,8 @@ public class OperatorPractice {
 		
 		System.out.print("바구니의 크기 : ");
 		int b = sc.nextInt();
-				
-		System.out.println("필요한 바구니의 수 : " + (a/b+((a%b+9)/10)));
+		c = (a>b) ? a/b+((a%b+9)/10):1;
+		System.out.println("필요한 바구니의 수 : " + c);
 		c = (a>b) ? a/b+((a%b+9)/10):1;
 	}
 }

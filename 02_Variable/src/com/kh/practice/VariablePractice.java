@@ -10,7 +10,7 @@ public class VariablePractice {
 //		vp.method1();
 //		vp.method2();
 //		vp.method3();
-//		vp.method4();
+		vp.method4();
 	}	
 		
 	
@@ -53,7 +53,7 @@ public void method3() { // 임시 변수 1개를 지정해서 x, y, z만 가지�
 		int y = 7;
 		int z = 9;
 		
-		int a = 5;
+		int a = 0;
 		
 		System.out.println("x=" + y);
 		System.out.println("y=" + z);
