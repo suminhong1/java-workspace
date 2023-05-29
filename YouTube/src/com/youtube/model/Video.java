@@ -11,8 +11,8 @@ public class Video {
 	private String imgUrl;
 	private String fileUrl;
 	
-	public Video() {
-	}
+	public Video() {}
+	
 	public Video(String title, String commnet, Date uploadAt, int count, String imgUrl, String fileUrl) {
 		this.title = title;
 		this.commnet = commnet;
