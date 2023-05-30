@@ -27,6 +27,7 @@ class LoopPractice {
     }
     // 1+(-2)+3+(-4)+...과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100 이상 되는지 출력하시오.
     public void method2() {
+    	
     }
     /*
         사용자로부터 문자열을 입력 받고 문자열에서 검색될 문자를 입력 받아 해당 문자열에 그 문자가 몇 개 있는지 개수를 출력하세요.
@@ -68,8 +69,7 @@ class LoopPractice {
     	for(int i=0 ; ; i++) {
     		int random = (int)(Math.random()*11);
     		System.out.println(random);
-    		if (random == 0 );{ // 피드백 부탁드립니다.
-    			
+    		if (random == 0 ){ 
     			break;
     		}
     }
@@ -206,10 +206,10 @@ class LoopPractice {
     public static void main(String[] args) {
     	LoopPractice l = new LoopPractice();
 //    	l.method1();
-//    	l.method2();
+    	l.method2();
 //    	l.method3();
 //    	l.method4();
 //    	l.method5();
-    	l.method6();
+//    	l.method6();
     }
 }
