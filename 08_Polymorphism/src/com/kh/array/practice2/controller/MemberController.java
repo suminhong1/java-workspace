@@ -26,7 +26,7 @@ public class MemberController {
 								m.getAge());
 		*/
 		mArr[count++] = m;
-		
+	
 		
 	}
 	
@@ -49,7 +49,6 @@ public class MemberController {
 	public int checkId(String id) { // id 검색!
 		// 객체 배열 값들 for문 돌려서~ 일치한지 확인해서 return값
 		for(int i=0; i<mArr.length; i++) {
-			
 			if(mArr[i]!=null && mArr[i].getId().equals(id)) {
 				return i;
 			}
@@ -62,11 +61,3 @@ public class MemberController {
 	}
 
 }
-
-
-
-
-
-
-
-

@@ -125,8 +125,8 @@ public class ArrayPractice {
 		ArrayPractice a = new ArrayPractice();
 //		a.method1();
 //		a.method2();
-//		a.method3();
-		a.method4();
+		a.method3();
+//		a.method4();
 //		a.method5();
 		
 	}
