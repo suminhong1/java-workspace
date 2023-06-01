@@ -1,8 +1,34 @@
 package com.youtube.controller;
 
+import com.youtube.model.User;
 import com.youtube.model.Video;
 
-public class VideoController {
+public class VideoController  implements UserControllerImpl{
+
+	@Override
+	public boolean login() {
+		return false;
+	}
+
+	@Override
+	public boolean signUp() {
+		return false;
+	}
+
+	@Override
+	public User viewProfile() {
+		return null;
+	}
+
+	@Override
+	public User updateProfile() {
+		return null;
+	}
+
+	@Override
+	public boolean delelteProfile() {
+		return false;
+	}
 	
 	/*
 	 * Create : 추가
@@ -11,21 +37,7 @@ public class VideoController {
 	 * Delete: 삭제
 	 */
 	
-	public Video upload() { // 영상 업로드
-		return null;
-	}
-	public Video[] videoList() { // 동영상 목록
-		return null;
-	}
-	public Video viewVideo() { // 영상 1개보기
-		return null;
-	}
-	public Video updateVideo() {//동영상 수정
-		return null;
-	}
-	public boolean deleteVideo() { //동영상 삭제
-		return false;
-	}
+	
 
 	// 영상 업로드
 	// 영상 목록
