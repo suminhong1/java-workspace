@@ -10,7 +10,7 @@ public interface VideoControllerImpl {
 	
 	public Video viewVideo(); 		 // 영상 1개보기
 	
-	public Video updateVideo();	 	 //동영상 수정
+	public Video updateVideo();	 	 // 동영상 수정
 	
-	public boolean deleteVideo();	 //동영상 삭제
+	public boolean deleteVideo();	 // 동영상 삭제
 }
