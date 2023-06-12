@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import com.youtube.model.Video;
 
 public class VideoController {
-	
+
 	ArrayList<Video> videoList = new ArrayList<>();
-	
+
 	public void upload(Video video) { // 영상 업로드
 		videoList.add(video);
 	}
@@ -27,13 +27,9 @@ public class VideoController {
 	public boolean deleteVideo(Video video) {
 		return videoList.remove(video);
 	}
-	
+
 	/*
-	 * Create : 추가
-	 * Read : 읽기 (1개, 목록)
-	 * Update : 수정
-	 * Delete : 삭제
-	 * */
-	
-	
+	 * Create : 추가 Read : 읽기 (1개, 목록) Update : 수정 Delete : 삭제
+	 */
+
 }
