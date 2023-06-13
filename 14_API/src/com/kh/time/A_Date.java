@@ -151,7 +151,7 @@ public class A_Date {
 		
 		System.out.print("태어난 날(yyyy/MM/dd) : ");
 		String b = sc.nextLine();
-		String[] bArr = b.split("/");  
+		String[] bArr = b.split("/"); //adfadf
 		
 	}
 	
