@@ -55,7 +55,8 @@ public class A_Match {
 		System.out.println(result);
 		
 		result = students.stream().filter(student -> (student.getGender().equals("남자")))
-				.anyMatch(student -> (student.getEnglish()+student.getMath())/2))
+				.anyMatch(student -> (student.getEnglish()+student.getMath())/2 >=70);
+		System.out.println(result);
 		
 		
 	}
