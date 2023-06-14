@@ -116,9 +116,9 @@ public class B_Dimension {
 	public static void main(String[] args) {
 		B_Dimension b = new B_Dimension();
 //		b.method1();
-//		b.method2();
+		b.method2();
 //		b.method3();
-		b.method4();
+//		b.method4();
 
 	}
 

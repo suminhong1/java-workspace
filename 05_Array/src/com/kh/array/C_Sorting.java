@@ -3,8 +3,6 @@ import java.util.Arrays;
 import java.util.Collections;
 public class C_Sorting {
 	
-		
-	
 	public void method1() {
 		
 		int[] arr = {7, 5, 9, 0, 3, 1, 6, 2, 4, 8};
@@ -37,7 +35,6 @@ public class C_Sorting {
 		Arrays.sort(arr, Collections.reverseOrder());
 		System.out.println(Arrays.toString(arr));
 		
-		
 	}
 	
 	// 최대값과 최소값 구하기
@@ -50,7 +47,6 @@ public class C_Sorting {
 		System.out.println("최소값 : " + score[0]);
 		System.out.println("최대값 : " + score[score.length-1]);
 	}
-	
 	
 	/*
 	 *  선택정렬(selection sort)
@@ -66,9 +62,6 @@ public class C_Sorting {
 	 *  0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 	 *
 	 * */
-	
-	
-	
 	public void method4() {
 		
 		int[] arr = {7, 5, 9, 0, 3, 1, 6, 2, 4, 8};	
@@ -91,15 +84,9 @@ public class C_Sorting {
 					arr[j] = temp;
 				}
 				
-			}
+			}	System.out.println(Arrays.toString(arr));
 		}
-		
-		
-		System.out.println(Arrays.toString(arr));
-		
 	}
-	
-	
 	/*
 	 * 삽입정렬(insertion sort)
 	 * - 동작 원리는 직관적, 선택 정렬에 비해서는 구현 난이도가 높음
@@ -113,7 +100,6 @@ public class C_Sorting {
 	 * 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 	 * */
 	
-	
 	public void method5() {
 		
 		int[] arr = {7, 5, 9, 0, 3, 1, 6, 2, 4, 8};
@@ -125,29 +111,21 @@ public class C_Sorting {
 		// i=3        j=0~2
 		// i=4        j=0~3
 		
-		
-		
-		
 		// 1. 비교주체
 		for(int i =1; i<arr.length; i++) {
 			
-			
 			// 2. 비교대상
-			for(int j =0; j<i; j++) {
+			for(int j=0; j<i; j++) {
 				
 				if(arr[j] > arr[i]) {
 					int temp = arr[i];
 					arr[i] = arr[j];
 					arr[j] = temp;
 				}
-				
 			}
+			System.out.println(Arrays.toString(arr));
 		}
-		System.out.println(Arrays.toString(arr));
 	}
-	
-	
-	
 	
 	/*
 	 * 버블 정렬(bubble sort)
@@ -163,42 +141,26 @@ public class C_Sorting {
 	 * 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 	 * */
 	
-	
 	public void method6() {
 		
 		int[] arr = {7, 5, 9, 0, 3, 1, 6, 2, 4, 8};
 		
-		
-		for( int i = arr.length-1; i>=0; i--) {
+		for(int i = arr.length-1; i>=0; i--) {
 			
 			for(int j=0; j<arr.length-1; j++) {
 				
 				if(arr[j] > arr[j+1]) {
-					
 					int temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
-					
 				}
 			}
+			System.out.println(Arrays.toString(arr));
 		}
-		
-		System.out.println(Arrays.toString(arr));
 	}
-	
-	
-	
+
 	public void method7() {
-		
-		
-		
-		
 	}
-	
-	
-	
-	
-	
 	
 	public static void main(String[] args) {
 		C_Sorting s = new C_Sorting();
@@ -207,8 +169,8 @@ public class C_Sorting {
 //		s.method3();
 //		s.method4();
 //		s.method5();
-//		s.method6();
-		s.method7();
+		s.method6();
+//		s.method7();
 	
 }
 }

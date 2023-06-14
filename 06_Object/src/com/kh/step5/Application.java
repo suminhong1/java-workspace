@@ -18,7 +18,7 @@ public class Application {
 		System.out.println(b1);
 		System.out.println(b2);
 		
-		//Getter를 이용하여 두 객체 각각 할인율을 적용한 책 가격을 계산해서 출력
+		// Getter를 이용하여 두 객체 각각 할인율을 적용한 책 가격을 계산해서 출력
 		
 
 		System.out.println(b1.getPrice()-(int)(b1.getPrice()*b1.getDiscountRate()));
