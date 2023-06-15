@@ -14,9 +14,6 @@ public class InputThreadTest {
 		
 		cThread.start();
 		idThread.start();
-		
-	
-		
 	}
 
 }
