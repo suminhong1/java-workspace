@@ -3,6 +3,7 @@ package com.youtube.impl;
 import com.youtube.model.Video;
 
 public interface VideoControllerImpl {
+	
 	public Video upload(); // 영상 업로드
 
 	public Video[] videoList(); // 동영상 목록
