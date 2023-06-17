@@ -8,6 +8,7 @@ public class Application {
 
 		
 		ChartsController cc = new ChartsController();
+		
 	}
 
 }

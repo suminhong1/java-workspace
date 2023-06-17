@@ -7,4 +7,5 @@ public class Album {
 	String like;       // 좋아요 수
 	String genre;      // 장르
 	
+	
 }

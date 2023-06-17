@@ -9,4 +9,5 @@ public class Charts {
 	private String genre;      // 장르
 	private String like;       // 좋아요 수
 	
+	
 }

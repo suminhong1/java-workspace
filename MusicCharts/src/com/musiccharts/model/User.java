@@ -1,6 +1,7 @@
 package com.musiccharts.model;
 
 public class User {
+	
 
 	private String name;  
 	private String id;
