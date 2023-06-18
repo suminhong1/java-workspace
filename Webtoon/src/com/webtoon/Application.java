@@ -1,5 +1,6 @@
 package com.webtoon;
 
+import java.util.List;
 import java.util.Scanner;
 
 import com.webtoon.controller.UserController;
@@ -206,22 +207,47 @@ public class Application {
 		System.out.println("웹툰 등록 완료.");
 		
 	}
+	public void viewAllWebtoons() {
+	    System.out.println("모든 웹툰 조회");
+	    List<Webtoon> webtoonList = wc.getAllWebtoons();
+	    if (!webtoonList.isEmpty()) {
+	        System.out.println("----- 웹툰 목록 -----");
+	        for (Webtoon webtoon : webtoonList) {
+	            System.out.println("웹툰 제목: " + webtoon.getTitle());
+	            System.out.println("장르: " + webtoon.getGenre());
+	            System.out.println("작가: " + webtoon.getWriter());
+	            System.out.println("--------------------");
+	        }
+	    } else {
+	        System.out.println("조회할 웹툰이 없습니다.");
+	    }
+	}
 	public void viewWebtoon() {
-		
-		System.out.println("웹툰 조회");
-		System.out.print("제목 입력 : ");
-		String title = sc.nextLine();
-		
-		Webtoon viewWebtoon = wc.viewWebtoon(title);
-		if(viewWebtoon!=null) {
-			System.out.println("웹툰 정보");
-			System.out.println("웹툰 제목 : " + viewWebtoon.getTitle());
-			System.out.println("웹툰 장르 : " + viewWebtoon.getGenre());
-			System.out.println("웹툰 작가 : " + viewWebtoon.getWriter());
-		} else {
-			System.out.println("조회할 수 없습니다. 다시 입력해 주세요.");
-			viewWebtoon();
-		}
+	    System.out.println("1. 웹툰 전체 조회");
+	    System.out.println("2. 특정 웹툰 조회");
+	    System.out.print("메뉴 번호: ");
+
+	    switch (Integer.parseInt(sc.nextLine())) {
+	        case 1:
+	            viewAllWebtoons();
+	            break;
+	        case 2:
+	            System.out.print("제목 입력: ");
+	            String title = sc.nextLine();
+	            Webtoon viewWebtoon = wc.viewWebtoon(title);
+	            if (viewWebtoon != null) {
+	                System.out.println("웹툰 정보");
+	                System.out.println("웹툰 제목: " + viewWebtoon.getTitle());
+	                System.out.println("장르: " + viewWebtoon.getGenre());
+	                System.out.println("작가: " + viewWebtoon.getWriter());
+	            } else {
+	                System.out.println("조회할 수 없습니다. 다시 입력해주세요.");
+	                viewWebtoon();
+	            }
+	            break;
+	        default:
+	            System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+	    }
 	}
 
 	public void updateWebtoon() {

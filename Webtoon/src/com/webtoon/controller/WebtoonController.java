@@ -44,4 +44,7 @@ public class WebtoonController {
 		}
 		return false;
 	}
+	public List<Webtoon> getAllWebtoons() {
+		return webtoonList;
+	}
 }
