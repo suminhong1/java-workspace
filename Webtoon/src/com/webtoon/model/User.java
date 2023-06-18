@@ -1,4 +1,4 @@
-package com.melon.model;
+package com.webtoon.model;
 
 import java.util.Objects;
 
