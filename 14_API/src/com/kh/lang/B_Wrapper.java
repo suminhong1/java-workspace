@@ -57,7 +57,7 @@ public class B_Wrapper {
 		double dNum3 = double1.doubleValue();
 		double dNum4 = double2.doubleValue();
 		
-		// 2. Wrapper 클래스의 정적 메서드르르 통한 방법
+		// 2. Wrapper 클래스의 정적 메서드를 통한 방법
 		int iNum = Integer.parseInt("19");
 		double dNum5 = Double.parseDouble("34.78");
 		
